@@ -4,8 +4,8 @@ const router = express.Router();
 
 // router.post('/postTableCategories',CategoryController.postTableCategories);
 // router.post('/postCategories',CategoryController.postCategories);
-router.put('putCategories',CategoryController.putCategories);
+router.put('/putCategories',CategoryController.putCategories);
 router.get('/getAllCategories',CategoryController.getAllCategories);
-router.get('/getCategoriesWiehId',CategoryController.getCategoriesWithId);
+router.get('/getCategoriesWiehId/:id',CategoryController.getCategoriesWithId);
 
 module.exports = router;

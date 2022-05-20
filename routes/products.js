@@ -7,7 +7,7 @@ const router = express.Router();
 router.put('/putProducts/:id',ProductController.putProducts);
 router.get('/getAllProducts',ProductController.getAllProducts);
 router.get('/getProductsDesc',ProductController.getProductsDesc);
-router.get('/getProductsWithProducts_name',ProductController.getProductsWithProducts_name);
-router.delete('/deleteProductsWithProducts_name',ProductController.deleteProductsWithProducts_name);
+router.get('/getProductsWithProducts_name/:product_name',ProductController.getProductsWithProducts_name);
+router.delete('/deleteProductsWithProducts_name/:product:name',ProductController.deleteProductsWithProducts_name);
 
 module.exports = router
